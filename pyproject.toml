@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "iss-setter-api"
+version = "0.1.0"
+description = "iss setter api"
+authors = ["ldraney <draneylucas@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+groq = "*"
+python-dotenv = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+transcribe = "transcribe:main"
